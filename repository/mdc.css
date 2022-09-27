@@ -1,0 +1,109 @@
+.container{
+	height:500px;
+
+	padding:0;
+	margin:10px;
+	border-radius:5px;
+	
+	
+}
+
+header {
+		position: relative;
+}
+
+.hide {
+		display: none;
+}
+
+.tab-content {
+		padding:25px;
+}
+
+#material-tabs {
+		position: relative;
+		display: block;
+	  padding:0;
+      width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+	
+}
+
+#material-tabs>a {
+		position: relative;
+    display: inline-flex;
+    border-radius: 6px 6px 0px 0px;
+    text-decoration: none;
+ padding:13px 43px 10px 30px;
+    background: inherit;
+    /* text-transform: uppercase; */
+    font-size: inherit;
+    font-weight: 500;
+    /* background: grey; */
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+#material-tabs>a img{
+max-width:16px;
+  padding-right:10px;
+}
+#material-tabs>a.active {
+		
+		outline:none;
+}
+
+#material-tabs>a:not(.active):hover {
+background-color: #1d9bff0d;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 520px) {
+		.nav-tabs#material-tabs>li>a {
+				font-size: 11px;
+		}
+}
+
+.yellow-bar {
+		position: absolute;
+		z-index: 10;
+		bottom: 0;
+		height: 3px;
+		background: #458CFF;
+		display: block;
+		left: 0;
+		transition: left .2s ease;
+		-webkit-transition: left .2s ease;
+}
+
+#tab1-tab.active ~ span.yellow-bar {
+    left: 10px;
+    width: 143px;
+}
+#tab2-tab.active ~ span.yellow-bar {
+left: 156px;
+    width: 127px;
+}
+#tab3-tab.active ~ span.yellow-bar {
+    left: 287px;
+    width: 150px;
+
+}
+#tab4-tab.active ~ span.yellow-bar {
+
+    left: 441px;
+    width: 181px;
+
+}
+
+#tab5-tab.active ~ span.yellow-bar {
+    left: 625px;
+    width: 146px;
+
+}
+#tab6-tab.active ~ span.yellow-bar {
+    left: 775px;
+    border-radius: 49px;
+    width: 128px;
+}

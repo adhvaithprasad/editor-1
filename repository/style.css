@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: url('https://assets.website-files.com/5c7036349b5477bf13f828cf/603df8c3598c88ba5bb1e789_CircularXX-Medium.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+    font-family: 'Circular Std';
+  height:100vh;
+overflow:hidden;
+}
+header{
+  height:55px;
+}
+.header-1{
+  height:100%;
+}
+.left{
+height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left img{
+  width:30px;
+  margin-right:40px;
+  border-radius:50%;
+  
+}
+.left #repository:hover {
+    background: #f5f5f5;
+}
+
+.left #repository {
+    text-decoration: none;
+    padding: 6px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    color: #1f1f1f;
+}
+.markdown-container{
+  display:none;
+}
+.navbar{
+  display:flex;
+  border-right:1px solid #8080804d;
+  flex-direction:column;
+}
+header{
+  border-bottom:1px solid #8080804d;
+}
+.layout{
+  display: flex;
+    height: calc(100% - 55px);
+}
+img{
+  width:20px;
+}
+button {
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-family: 'Circular Std';
+    color: white;
+    background: #7950ed;
+}
+.body{
+display:none;
+    position: absolute;
+    width: calc(100% - 56px);
+   right: 0;
+    bottom: 0;
+    height: calc(100% - 56px);
+}
+.file-container {
+    padding: 8px 18px;
+    margin: 5px;
+    max-height: 30px;
+    border-radius: 4px;
+    border: 1px solid #80808085;
+    display: inline-block;
+    max-width: 250px;
+    width: 200px;
+}
+.file-inner-container{
+  display:flex;
+}
+.branch-n-search{
+  height:50px
+}
+#files{
+  height:calc(100% - 50px);
+  width:400px;
+}
+.file-container:hover {
+    background: #f5f5f5;
+    color: black;
+    cursor: pointer;
+}
+#filename{
+  display:none;
+}
+#filepath{
+  display:none;
+}
+.file-container img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+#files {
+    height: calc(100% - 50px);
+    width: 992px;
+    margin: auto;
+    padding: 0px 40px;
+}
+.fileman{
+  display: flex;
+  width:calc(100% - 55px);
+    flex-direction: column;
+  overflow:auto;
+}
+.stackedit__html{
+  font-family: Lato,Helvetica Neue,Helvetica,sans-serif;
+}
+.navbar {
+    width: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+#branches{
+  background:#424242;
+  
+}
+.navbar i {
+    /* padding: 20px; */
+    height: 55px;
+    display: flex;
+    padding-right: 2px;
+    width: 55px;
+    /* margin: 9px 0px; */
+    /* border-radius: 5px; */
+    justify-content: center;
+    align-items: center;
+}
+.navbar i:hover {
+    background: #ededed;
+    cursor: pointer;
+    padding-right: 0px;
+    /* padding: 19px; */
+    border-right: 2px solid #6200ee;
+}
+.branch-n-search {
+    height: 50px;
+    display: flex;
+margin:20px 0px;
+  align-items: center;
+    justify-content: center;
+}
+.branch-n-search input{
+  padding: 9px;
+    border-radius: 5px;
+    width: 550px;
+    outline: none;
+    font-family: 'Circular Std';
+    border: 1px solid #ababab;
+}
+.branch-n-search select{
+  border-radius: 4px;
+    padding: 9px;
+    font-family: 'Circular Std';
+    border: none;
+    background: #80808057;
+    outline: none;
+    color: #252525;
+}
+.branch-n-search button{
+  margin:0px 10px;
+}
+@keyframes pulse {
+  0%{transform:scale(.1);opacity: 0;}
+  50%{ opacity: .4;}
+  100%{transform: scale(1.6); opacity: 0;}
+}
+.loader{
+  background-color: #977ce3;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+
+div.loader1{
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+div.loader2 {
+    -webkit-animation: pulse 2s infinite .3s;
+    animation: pulse 2s infinite .3s;
+}
+.loading{
+height: 100%;
+    background: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    /* right: 0; */
+    top: 0;
+}
